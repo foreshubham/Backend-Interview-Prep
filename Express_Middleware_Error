@@ -1,0 +1,35 @@
+Express.js Interview Preparation Notes
+1. Introduction to Express.js
+Express.js is a minimal and flexible Node.js web application framework.
+It helps in handling HTTP requests and responses efficiently.
+It is a core part of the MERN stack (MongoDB, Express, React, Node).
+2. Key Features of Express.js
+Routing: Allows defining different routes for handling HTTP requests.
+Middleware: Functions that process requests before sending responses.
+Template Engines: Supports rendering dynamic HTML using engines like EJS, Handlebars, etc.
+Error Handling: Provides built-in and custom error-handling mechanisms.
+Scalability: Easily integrates with databases and other services.
+3. Express.js vs Other Frameworks
+Feature	Express.js	Angular	React
+Type	Framework	Framework	Library
+Routing	Built-in	Built-in	Uses React Router
+Flexibility	High	Medium	High
+Opinionated	No	Yes	No
+4. Basic Express.js Workflow
+Require Express → const express = require('express');
+Initialize App → const app = express();
+Middleware Setup → app.use(express.json());
+Define Routes → app.get('/', (req, res) => res.send('Hello World!'));
+Start Server → app.listen(3000, () => console.log('Server running'));
+5. Express.js Middleware
+Application-Level Middleware → app.use((req, res, next) => next());
+Router-Level Middleware → router.use((req, res, next) => next());
+Error-Handling Middleware → app.use((err, req, res, next) => res.status(500).send(err));
+6. Commonly Asked Interview Questions
+What is Express.js and why is it used?
+Explain the role of middleware in Express.js.
+How does Express.js handle routing?
+What is the difference between GET and POST requests?
+How do you handle errors in Express.js?
+What is the difference between app.use() and app.get()?
+How does Express.js differ from the core HTTP module in Node.js?
