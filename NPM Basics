@@ -1,0 +1,78 @@
+NPM Basics & Advanced Features - Interview Notes
+
+Introduction to NPM
+
+NPM (Node Package Manager) is a package manager for JavaScript, mainly used to manage dependencies in Node.js applications.
+
+It allows developers to install, update, and manage JavaScript libraries and tools efficiently.
+
+Understanding NPM
+
+Initially, NPM stood for Node Package Manager, but as it expanded beyond Node.js packages, the name was kept without an official meaning.
+
+Think of NPM as an app store for JavaScript packages, offering reusable code libraries.
+
+Key Concepts in NPM
+
+Modules vs. Packages
+
+Modules: Built-in components of Node.js, available by default.
+
+Packages: External codebases that developers can install from NPM.
+
+Installing and Managing Packages
+
+Install a package globally:
+
+npm install -g <package-name>
+
+Install a package locally (for a specific project):
+
+npm install <package-name>
+
+Uninstall a package:
+
+npm uninstall <package-name>
+
+Understanding Dependencies
+
+Dependencies: Packages required for an application to run.
+
+Dev Dependencies: Packages only needed during development (e.g., testing tools, compilers).
+
+npm install <package-name> --save-dev
+
+Scripts in NPM
+
+Used to automate tasks like starting a server, running tests, or building the project.
+
+Example:
+
+"scripts": {
+  "start": "node app.js",
+  "test": "jest"
+}
+
+Run using:
+
+npm run start
+
+Real-world Example
+
+Suppose we need a Text-to-Speech feature for visually impaired users.
+
+Instead of building it from scratch, we can use an existing package from NPM.
+
+Search for a package on NPMJS and install it.
+
+npm install text-to-speech
+
+Why Use NPM?
+
+Saves development time by using pre-built solutions.
+
+Helps manage project dependencies efficiently.
+
+Ensures compatibility with modern JavaScript frameworks like React, Angular, and Vue.
+
+Supports automation through NPM scripts.
