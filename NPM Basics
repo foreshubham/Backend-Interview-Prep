@@ -1,6 +1,6 @@
-NPM Basics & Advanced Features - Interview Notes
+# NPM Basics & Advanced Features - Interview Notes
 
-Introduction to NPM
+## Introduction to NPM
 
 NPM (Node Package Manager) is a package manager for JavaScript, mainly used to manage dependencies in Node.js applications.
 
